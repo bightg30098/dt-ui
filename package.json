@@ -2,16 +2,31 @@
   "name": "@bightg30098/dt-ui",
   "version": "0.0.2",
   "type": "module",
+  "license": "UNLICENSED",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/dt-ui.umd.js",
+  "module": "./dist/dt-ui.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/dt-ui.es.js",
+      "require": "./dist/dt-ui.umd.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "dotenv -v NODE_OPTIONS=--openssl-legacy-provider -- start-storybook -p 6006",
     "build-storybook": "dotenv -v NODE_OPTIONS=--openssl-legacy-provider -- build-storybook",
-    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx src",
-    "prettier": "prettier --write \"./src/**/*.+(js|jsx|ts|tsx)\""
+    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx,.cjs src",
+    "prettier": "prettier --write \"./src/**/*.+(js|jsx|ts|tsx|cjs)\""
   },
   "dependencies": {
+    "@floating-ui/react": "^0.15.1",
+    "clsx": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -37,7 +52,6 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-tailwindcss": "^3.7.1",
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",
     "prettier-plugin-tailwindcss": "^0.2.1",
@@ -47,17 +61,5 @@
     "vite-plugin-dts": "^1.7.1",
     "vite-plugin-svgr": "^2.4.0",
     "vite-tsconfig-paths": "^4.0.3"
-  },
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/dt-ui.umd.js",
-  "module": "./dist/dt-ui.es.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/dt-ui.es.js",
-      "require": "./dist/dt-ui.umd.js"
-    }
   }
 }
