@@ -13,10 +13,6 @@
     ".": {
       "import": "./dist/dt-ui.es.js",
       "require": "./dist/dt-ui.umd.js"
-    },
-    "./style.css": {
-      "import": "./dist/style.css",
-      "require": "./dist/style.css"
     }
   },
   "scripts": {
@@ -29,7 +25,7 @@
     "prettier": "prettier --write \"./src/**/*.+(js|jsx|ts|tsx|cjs)\""
   },
   "dependencies": {
-    "@bightg30098/dt-ui": "^0.0.5",
+    "@bightg30098/dt-ui": "^0.0.6",
     "@floating-ui/react": "^0.15.1",
     "clsx": "^1.2.1",
     "react": "^18.2.0",
@@ -63,6 +59,7 @@
     "tailwindcss": "^3.2.4",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
+    "vite-plugin-css-injected-by-js": "^2.2.0",
     "vite-plugin-dts": "^1.7.1",
     "vite-plugin-svgr": "^2.4.0",
     "vite-tsconfig-paths": "^4.0.3"

@@ -1153,6 +1153,17 @@
     react "^18.2.0"
     react-dom "^18.2.0"
 
+"@bightg30098/dt-ui@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@bightg30098/dt-ui/-/dt-ui-0.0.6.tgz#3b243f2bb1f3fecd6c3cb803e5122fe08b49821d"
+  integrity sha512-SHoZjsJdP5m1pooAbQUaVmoUSn7ZzsCEpYVomMpN5Dxkvsw6oUpMCrjFm3tBVF/wkoX+ymvDdh3c6mX6PRYz8Q==
+  dependencies:
+    "@bightg30098/dt-ui" "^0.0.5"
+    "@floating-ui/react" "^0.15.1"
+    clsx "^1.2.1"
+    react "^18.2.0"
+    react-dom "^18.2.0"
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -11065,6 +11076,11 @@ vfile@^4.0.0:
     is-buffer "^2.0.0"
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
+
+vite-plugin-css-injected-by-js@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-css-injected-by-js/-/vite-plugin-css-injected-by-js-2.2.0.tgz#5ff95fbee027698e399a30437335214dc09bb989"
+  integrity sha512-SRGuyY1WUHj7cPzv7AIE0bG5Cb+vioxuq3CkFc1j0b8z5Cy3rXLG8SwxjriylFcZAY7tH2jU4i1bsCJRE/ou6g==
 
 vite-plugin-dts@^1.7.1:
   version "1.7.1"

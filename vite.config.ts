@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import svgrPlugin from 'vite-plugin-svgr'
 import dts from 'vite-plugin-dts'
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 
 // https://vitejs.dev/config/
 export default defineConfig(async ({ command, mode }) => {
@@ -17,6 +18,7 @@ export default defineConfig(async ({ command, mode }) => {
         dts({
           insertTypesEntry: true,
         }),
+        cssInjectedByJsPlugin(),
       ],
       build: {
         lib: {

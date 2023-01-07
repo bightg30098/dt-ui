@@ -1,7 +1,5 @@
 import { Button } from '@bightg30098/dt-ui'
 
-import '@bightg30098/dt-ui/style.css'
-
 export default function App() {
   return (
     <div className="h-screen w-screen bg-black p-8">
