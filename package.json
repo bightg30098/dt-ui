@@ -1,6 +1,6 @@
 {
   "name": "@bightg30098/dt-ui",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "type": "module",
   "license": "UNLICENSED",
   "files": [
@@ -13,7 +13,8 @@
     ".": {
       "import": "./dist/dt-ui.es.js",
       "require": "./dist/dt-ui.umd.js"
-    }
+    },
+    "./style.css": "./dist/style.css"
   },
   "scripts": {
     "dev": "vite",
@@ -22,7 +23,8 @@
     "storybook": "dotenv -v NODE_OPTIONS=--openssl-legacy-provider -- start-storybook -p 6006",
     "build-storybook": "dotenv -v NODE_OPTIONS=--openssl-legacy-provider -- build-storybook",
     "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx,.cjs src",
-    "prettier": "prettier --write \"./src/**/*.+(js|jsx|ts|tsx|cjs)\""
+    "prettier": "prettier --write \"./src/**/*.+(js|jsx|ts|tsx|cjs)\"",
+    "prepublish": "yarn build"
   },
   "dependencies": {
     "@floating-ui/react": "^0.15.1",
