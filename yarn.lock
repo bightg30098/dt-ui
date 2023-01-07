@@ -1164,6 +1164,17 @@
     react "^18.2.0"
     react-dom "^18.2.0"
 
+"@bightg30098/dt-ui@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@bightg30098/dt-ui/-/dt-ui-0.0.7.tgz#48a9b6c4385b54b45008c08cf07395d660f64509"
+  integrity sha512-6Slq9LVkMj7p4zoJKJh4JGyQ/ey6qfPrixjdGoxd+xArR/bguhEQYSTzitfmc6jWpRm0UfEHQELQwqNF7C/bAg==
+  dependencies:
+    "@bightg30098/dt-ui" "^0.0.6"
+    "@floating-ui/react" "^0.15.1"
+    clsx "^1.2.1"
+    react "^18.2.0"
+    react-dom "^18.2.0"
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"

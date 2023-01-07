@@ -18,7 +18,7 @@ export default defineConfig(async ({ command, mode }) => {
         dts({
           insertTypesEntry: true,
         }),
-        cssInjectedByJsPlugin(),
+        // cssInjectedByJsPlugin(),
       ],
       build: {
         lib: {

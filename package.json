@@ -13,7 +13,8 @@
     ".": {
       "import": "./dist/dt-ui.es.js",
       "require": "./dist/dt-ui.umd.js"
-    }
+    },
+    "./dist/style.css": "./dist/style.css"
   },
   "scripts": {
     "dev": "vite",
@@ -25,7 +26,7 @@
     "prettier": "prettier --write \"./src/**/*.+(js|jsx|ts|tsx|cjs)\""
   },
   "dependencies": {
-    "@bightg30098/dt-ui": "^0.0.6",
+    "@bightg30098/dt-ui": "^0.0.7",
     "@floating-ui/react": "^0.15.1",
     "clsx": "^1.2.1",
     "react": "^18.2.0",
