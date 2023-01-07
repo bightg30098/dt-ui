@@ -15,9 +15,11 @@ export default defineConfig(async ({ command, mode }) => {
       plugins: [
         react(),
         svgrPlugin(),
+        // inject index.d.ts
         dts({
           insertTypesEntry: true,
         }),
+        // remove following comment if you want to include css in js bundles.
         // cssInjectedByJsPlugin(),
       ],
       build: {
@@ -28,6 +30,7 @@ export default defineConfig(async ({ command, mode }) => {
           fileName: (format) => `dt-ui.${format}.js`,
         },
         rollupOptions: {
+          // exclude external pkgs in package.json dependencies: ['react', 'react-dom', ...]
           external: Object.keys(pkg.dependencies),
           output: {
             globals: {
