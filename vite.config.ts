@@ -19,7 +19,6 @@ export default defineConfig(async ({ command, mode }) => {
         }),
       ],
       build: {
-        sourcemap: true,
         lib: {
           name: 'DT-UI',
           entry: path.resolve(__dirname, 'src/index.ts'),
