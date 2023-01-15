@@ -1,6 +1,6 @@
 import { Button } from '@bightg30098/dt-ui'
 
-import '@bightg30098/dt-ui/dist/style.css'
+import '@bightg30098/dt-ui/dist/index.css'
 
 export default function App() {
   return (
