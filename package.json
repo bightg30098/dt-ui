@@ -6,19 +6,19 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/dt-ui.umd.js",
-  "module": "./dist/dt-ui.es.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/dt-ui.es.js",
-      "require": "./dist/dt-ui.umd.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     },
-    "./dist/style.css": "./dist/style.css"
+    "./dist/index.css": "./dist/index.css"
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsup",
     "preview": "vite preview",
     "storybook": "dotenv -v NODE_OPTIONS=--openssl-legacy-provider -- start-storybook -p 6006",
     "build-storybook": "dotenv -v NODE_OPTIONS=--openssl-legacy-provider -- build-storybook",
