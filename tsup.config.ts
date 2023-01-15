@@ -14,4 +14,28 @@ export default defineConfig({
   format: ['esm', 'cjs'],
   minify: true,
   treeshake: true,
+  outDir: 'dist',
+  async onSuccess() {
+    cleanupEmptyFolders(path.resolve('dist'))
+  },
 })
+
+function cleanupEmptyFolders(folder: string) {
+  if (!fs.statSync(folder).isDirectory()) {
+    return
+  }
+
+  let files = fs.readdirSync(folder)
+
+  if (files.length > 0) {
+    files.forEach((file) => cleanupEmptyFolders(path.join(folder, file)))
+    // Re-evaluate files; after deleting subfolders we may have an empty parent
+    // folder now.
+    files = fs.readdirSync(folder)
+  }
+
+  if (files.length == 0) {
+    console.log('removing: ', folder)
+    fs.rmdirSync(folder)
+  }
+}
